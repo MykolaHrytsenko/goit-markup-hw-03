@@ -45,7 +45,19 @@ address {
   clip: rect(0 0 0 0);
 }
 
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
 /* ----- Header -----*/
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
