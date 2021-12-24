@@ -52,6 +52,13 @@ address {
   outline: 2px solid red;
 }
 
+.features,
+.wwd,
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* ----- Header -----*/
 
 .header {
@@ -137,9 +144,8 @@ address {
 /* ----- Features ----- */
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: royalblue;
+  padding-bottom: 0;
 }
 
 .features-item-title {
@@ -173,12 +179,24 @@ address {
 
 .team-item-name {
   font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 /* ----- Footer ----- */
 
 .footer {
   background-color: var(--first-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.flogo {
+  margin-bottom: 20px;
+}
+
+.footer-item {
+  margin-bottom: 9px;
 }
 
 .footer-link[target="_blank"] {
