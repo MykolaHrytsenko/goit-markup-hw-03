@@ -214,6 +214,11 @@ address {
 
 /* ----- Portfolio ----- */
 
+.projects {
+  padding-top: 82px;
+  padding-bottom: 126px;
+}
+
 .projects-btn {
   font-family: inherit;
   font-weight: 500;
@@ -241,6 +246,8 @@ address {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .projects-list-text {
