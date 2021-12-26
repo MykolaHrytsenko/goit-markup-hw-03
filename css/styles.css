@@ -7,6 +7,8 @@
   --second-background-color: #f5f4fa;
   --btn-hover-color: #188ce8;
   --link-color: rgba(255, 255, 255, 0.6);
+  --border-card-color: #eeeeee;
+  --header-border-color: #c4c4c4;
 }
 
 body {
@@ -178,16 +180,13 @@ address {
 .wwd-list,
 .team-list {
   display: flex;
-  justify-content: space-between;
+  margin-right: -30px;
 }
 
-.features-item {
+.features-item,
+.team-item {
   min-width: 270px;
-}
-
-.features-item:not(:last-child),
-.wwd-item:not(:last-child),
-.team-item:not(:last-child) {
+  width: calc(100% / 4 -30px);
   margin-right: 30px;
 }
 
@@ -206,6 +205,11 @@ address {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+}
+
+.wwd-item {
+  width: calc(100% / 3 - 30px);
+  margin-right: 30px;
 }
 
 /* ----- Team ----- */
@@ -278,6 +282,19 @@ address {
   padding-bottom: 126px;
 }
 
+.projects-btn-list {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-list-item {
+  margin-bottom: 50px;
+}
+
+.projects-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .projects-btn {
   font-family: inherit;
   font-weight: 500;
@@ -289,6 +306,8 @@ address {
   background: var(--second-background-color);
   border-radius: 4px;
   cursor: pointer;
+  border-color: transparent;
+  padding: 2px 22px;
 }
 
 .projects-btn:focus,
@@ -300,16 +319,39 @@ address {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.projects-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.projects-link-item {
+  min-width: 370px;
+  width: calc(100% / 9 - 30px);
+  margin: 15px;
+}
+
 .projects-list-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .projects-list-text {
   font-size: 16px;
   line-height: 1.87;
   margin-top: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+}
+
+.projects-card-footer {
+  background: var(--btn-text-color);
+  border: 1px solid var(--border-card-color);
+  box-sizing: border-box;
 }
